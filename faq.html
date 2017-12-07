@@ -12,6 +12,7 @@
 <meta itemprop="image" content="files/images/landingblock1-bg.jpg">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
 <link rel="stylesheet" media="screen" href="css/style.css" />
 </head><!--[if lt IE 8]>
 <body class="lt-ie9 lt-ie8 ie7 "> <![endif]-->
@@ -110,15 +111,16 @@
 </section><section class="representative">
 <p><strong>Representative APR 391%.</strong> Average APR for this type of loans is 391%. Let's say you want to borrow $100 for two week. Lender can charge you $15 for borrowing $100 for two weeks. You will need to return $115 to the lender at the end of 2 weeks. The cost of the $100 loan is a $15 finance charge and an annual percentage rate of 391 percent. If you decide to roll over the loan for another two weeks, lender can charge you another $15. If you roll-over the loan three times, the finance charge would climb to $60 to borrow the $100. </p>
 <p><strong>Implications of Non-payment:</strong> Some lenders in our network may automatically roll over your existing loan for another two weeks if you don't pay back the loan on time. Fees for renewing the loan range from lender to lender. Most of the time these fees equal the fees you paid to get the initial payday loan. We ask lenders in our network to follow legal and ethical collection practices set by industry associations and government agencies. Non-payment of a payday loan might negatively effect your credit history.</p>
+<div id="r-btns">
 <a href="apply-now.html" class="r-btn btn btn-yellow">Calculate APR</a>
-<a href="#r-rules" class="r-popup r-rules btn btn-yellow">Rules in Your State</a>
-<a href="#r-loan" class="r-popup r-loan btn btn-yellow">Alternatives to Payday Loan</a>
-<a href="#r-military" class="r-popup r-military btn btn-yellow">For Military Consumers</a>
+<a href="#r-rules" class="r-btn btn btn-yellow">Rules in Your State</a>
+<a href="#r-loan" class="r-btn btn btn-yellow">Alternatives to Payday Loan</a>
+<a href="#r-military" class="r-btn btn btn-yellow">For Military Consumers</a>
+</div>
 </section>
-<div style="display:none">
-<div id="r-calculate" class="content r-popup-content"></div>
-<div style="width:960px;height:550px;overflow: auto;position:relative;">
-<div id="r-rules" class="content r-popup-content">
+<div>
+<div id="r-rules" class="r-popup">
+<div class="r-popup-content">
 <h4>Rules in Your State</h4>
 <table width="100%" class="rates-table">
 <tbody>
@@ -527,9 +529,11 @@
 </tr>
 </tbody>
 </table>
+<a class="close" href="#r-btns">x</a>
 </div>
 </div>
-<div id="r-loan" class="content r-popup-content">
+<div id="r-loan" class="r-popup">
+<div class="r-popup-content">
 <h4>Alternatives to Payday Loan</h4>
 <p>Before you decide to take out a payday loan, consider some alternatives.</p>
 <ol>
@@ -541,13 +545,18 @@
 <li><strong>Find out if you have — or if your bank will offer you — overdraft protection on your checking account.</strong> If you are using most or all the funds in your account regularly and you make a mistake in your account records, overdraft protection can help protect you from further credit problems. Find out the terms of the overdraft protection available to you — both what it costs and what it covers. Some banks offer “bounce protection,” which may cover individual overdrafts from checks or electronic withdrawals, generally for a fee. It can be costly, and may not guarantee that the bank automatically will pay the overdraft.</li>
 </ol>
 <p>The bottom line on payday loans: Try to find an alternative. If you must use one, try to limit the amount. Borrow only as much as you can afford to pay with your next paycheck — and still have enough to make it to next payday.</p>
+<a class="close" href="#r-btns">x</a>
 </div>
-<div id="r-military" class="content r-popup-content">
+</div>
+<div id="r-military" class="r-popup">
+<div class="r-popup-content">
 <h4>For Military Consumers</h4>
 <p>Payday loans (and certain other financing) offered to servicemembers and their dependents must include certain protections, under Federal law and a Department of Defense rule. For example, for payday loans offered after October 1, 2007, the military annual percentage rate cannot exceed 36%. Most fees and charges, with few exceptions, are included in the rate. Creditors also may not, for example, require use of a check or access to a bank account for the loan, mandatory arbitration, and unreasonable legal notices. Military consumers also must be given certain disclosures about the loan costs and your rights. Credit agreements that violate the protections are void. Creditors that offer payday loans may ask loan applicants to sign a statement about their military affiliation.</p>
 <p>Even with these protections, payday loans can be costly, especially if you roll-over the loan. You instead may be able to obtain financial assistance from military aid societies, such as the Army Emergency Relief, Navy and Marine Corps Relief Society, Air Force Aid Society, or Coast Guard Mutual Aid. You may be able to borrow from families or friends, or get an advance on your paycheck from your employer. If you still need credit, loans from a credit union, bank, or a small loan company may offer you lower rates and costs. They may have special offers for military applicants, and may help you start a savings account. A cash advance on your credit card may be possible, but it could be costly. Find out the terms for any credit before you sign. You may request free legal advice about a credit application from a service legal assistance office, or financial counseling from a consumer credit counselor, including about deferring your payments.</p>
 <p>Military consumers can contact the Department of Defense, toll-free 24 hours a day, 7 days a week, at 1-800-342-9647, or at <a href="http://www.militaryonesource.com/" target="_blank">www.militaryonesource.com.</a> Information on the Department of Defense rule, alternatives to payday loans, financial planning, and other guidance is available.</p>
 <p>This article was previously available as Payday Loans Equal Very Costly Cash: Consumers Urged to Consider the Alternatives.</p>
+<a class="close" href="#r-btns">x</a>
+</div>
 </div>
 </div>
 <section class="footer-wrap">
@@ -599,6 +608,5 @@
 </footer>
 </section>
 <script src="files/jquery-1.12.1.min.js"></script>
-<script src="files/myScripts.js"></script>
 </body>
 </html>
