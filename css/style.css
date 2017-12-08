@@ -1926,3 +1926,34 @@ footer {
     line-height: 1.2;
     transition: all .3s ease;
 }
+
+
+/* =Tables-nick-12-08-16
+*******************************************************************************/
+.rates-table {
+    border-collapse: collapse;
+	margin-bottom:20px;
+}
+.rates-table th {
+    background: #1D4F75;
+    color: #e9ffff;
+    border: 1px solid #e9ffff;
+    text-transform: uppercase;
+    font: normal 12px/18px Arial;
+    padding: 10px;
+    text-align: left;
+}
+.rates-table td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: top;
+    background: #f2f2f2;
+}
+.td-state {
+    width: 100px;
+}
+.td-amount {
+    width: 100px;
+}
