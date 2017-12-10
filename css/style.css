@@ -1135,37 +1135,25 @@ header {
     overflow: hidden;
 }
 
+.features-item i {
+    float: left;
+    color: #11804f
+}
+
 .feature-title {
     height: 35px;
-    padding-left: 42px;
-    margin-bottom: 9px;
+    padding-left: 10px;
+    margin-top: 3px;
     font-size: 18px;
     font-family: 'Opan sans', sans-serif;
     font-weight: 700;
-}
-
-.f1 {
-    padding-left: 50px;
-    background: url(../files/images/f1.png) 0 -4px no-repeat;
-}
-
-.f2 {
-    background: url(../files/images/f2.png) 0 -3px no-repeat;
-    padding-left: 39px;
-}
-
-.f3 {
-    background: url(../files/images/f3.png) 0 -1px no-repeat;
-}
-
-.f4 {
-    background: url(../files/images/f4.png) 0 -2px no-repeat;
-    padding-left: 44px;
+    float: left;
 }
 
 .feature-text {
     font-size: 12px;
     line-height: 1.5;
+    margin-right: 20px;
 }
 
 .article {
