@@ -792,7 +792,7 @@ header {
     width: 370px;
     height: 30px;
     padding: 10px 0px 0px 22px;
-    border-left: 1px solid #151515;
+    border-left: 1px solid #dee2df;
     color: #dee2df;
 }
 
@@ -1974,7 +1974,7 @@ footer {
 	margin-bottom:20px;
 }
 .rates-table th {
-    background: #1D4F75;
+    background: #ea7902;
     color: #e9ffff;
     border: 1px solid #e9ffff;
     text-transform: uppercase;
