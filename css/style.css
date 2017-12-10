@@ -1194,6 +1194,84 @@ header {
     line-height: 1.85;
 }
 
+/* =Steps*/
+.payday-steps{
+	position: relative;
+	padding:10px;
+	height:116px;
+	background:#313247;
+	margin:10px auto 20px auto;
+}
+.payday-steps h3{
+	color:#fcc632;
+	float:left;
+	font: 700 38px/120px Arial;
+	padding-right:20px;
+	margin-right:20px;
+	position:relative;
+	padding-left:60px;	
+	text-transform:uppercase;
+}
+.payday-steps h3:after{
+	content:'';
+	position:absolute;
+	width:26px;
+	height:116px;
+	right: -6px;
+	top:0;
+	background:url("../images/sprite.png") no-repeat -959px  0;	
+}
+.payday-steps h4{
+	color:#fff;
+	font: 30px/40px Arial;
+	padding-top:20px;
+}
+.payday-steps p{
+	color:#fff;
+	font: 700 14px/20px Arial;
+	padding-bottom:20px;
+}
+.payday-steps .bx-pager{
+	position: absolute;
+	right: 0;
+	top: -35px;
+}
+.payday-steps .bx-pager-item:first-child{
+	border:none;
+}
+.payday-steps .bx-pager-item{
+	float: left;
+	border-left: 1px solid #000;
+	padding-left:10px;
+	margin-left:10px;
+}
+.payday-steps .bx-pager a:before{
+	content: 'Step'
+}
+.payday-steps .bx-pager a{
+	color:#ff8d09;
+	font: 700 14px/17px Arial;
+}
+.bx-pager-item a.active{
+	color:#676767;
+}
+.payday-steps h3:before{
+	display: block;
+	width: 35px;
+	height: 35px;
+	content:'';
+	position: absolute;
+	left: 20px;
+	top:40px;
+	background: url(../images/sprite.png) no-repeat 0 -34px;
+}
+.payday-steps h3.payday-step2:before{
+	background-position: -35px -34px;
+}
+.payday-steps h3.payday-step3:before{
+	background-position: -70px -34px;
+}
+
 .step-wrap {
     overflow: hidden;
     margin-top: 21px;
