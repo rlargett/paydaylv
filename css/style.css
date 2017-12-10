@@ -792,7 +792,7 @@ header {
     width: 370px;
     height: 30px;
     padding: 10px 0px 0px 22px;
-    border-left: 1px solid #151515;
+    border-left: 1px solid #dee2df;
     color: #dee2df;
 }
 
@@ -853,12 +853,11 @@ header {
 }
 
 .top-nav-link:hover {
-    color: #a8c7db;
+    color: #151515;
 }
 
 .top-nav-link:active {
-    color: #a8c7db;
-    background: #053a5c;
+    color: #dee2df;
 }
 
 
