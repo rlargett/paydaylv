@@ -146,3 +146,75 @@ $(function () {
 
 });
 
+
+    function deploy(el) {
+        var id = el.getAttribute("data-deploy-title"),
+                content = $("[data-deploy-content =" + id + "]"),
+                wrap = $("[data-deploy-wrap =" + id + "]");
+
+        if (wrap.height() == 0) {
+        wrap.height(content.outerHeight(true));
+    $(el).toggleClass("active");
+        }
+        else {
+        wrap.height(0);
+    $(el).toggleClass("active");
+        }
+    }
+    var $form = $("#js-un_subscribe-form");
+
+    $.urlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (!results) {
+            return '';
+        }
+        return results[1] || '';
+    };
+    $('#js_email').val(decodeURIComponent($.urlParam('email')));
+
+    var validator = $form.validate({
+        rules: {
+        'email': {
+        email: true,
+                required: true
+            }
+        },
+        errorClass: 'validationError',
+        validClass: 'validationPassed',
+        errorPlacement: function(error, element) {
+        element.next('.form__error').html(error);
+    },
+        highlight: function (element, errorClass, validClass) {
+            var $element = $form.find(element);
+            $element.parent().addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            var $element = $form.find(element);
+            $element.parent().removeClass(errorClass).addClass(validClass);
+        },
+        submitHandler: function(form) {
+        $.ajax({
+            url: 'https://leadapi.net/api/payday-us/unsubscribe',
+            dataType: 'jsonp',
+            type: 'GET',
+            data: $form.serializeArray(),
+            success: function (data) {
+                if (data.result == 'success') {
+                    $('#js-main-success').toggle();
+                    $form.toggle();
+                } else if (data.result == 'errors') {
+                    var $element = $form.find('#js_email');
+                    $element.parent().addClass('validationError').removeClass('validationPassed');
+                    $element.next('.form__error').html(data.message);
+                } else {
+                    alert('Invalid response from server. Please try again later.');
+                }
+            },
+            error: function () {
+                $('#js-main-success').toggle();
+                $form.toggle();
+                alert('Invalid response from server. Please try again later.');
+            }
+        });
+    }
+    });

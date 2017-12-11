@@ -2,27 +2,31 @@
 include partials/_header
 
 <section class="form-top">
-    include partials/_get-started-form
+    <div class="form-wrap">
+        <div class="form-text">
+            <span class="online-cash">Unsubscribe in one click</span>
+        </div>
+        <div class="form">
+
+            <form action="" method="get" id="js-un_subscribe-form" novalidate>
+                <div class="form-row">
+                     <input id="js_email" name="email" type="text" placeholder="Email" tabindex="3" value=""/>
+                     <div class="form__error"></div>
+                </div>
+                <button class="btn btn-yellow">Unsubscribe</button>
+
+            </form>
+            <p id="js-main-success" style="display: none">Thank you! We successfully deleted your email from our list. If you change your mind, simply register on our website again anytime you want. We will be glad to contact more.</p>
+        </div>
+
+    </div>
 </section>
 
 <section class="main-container">
     <div class="article">
-        <div class="main-col content-editable">
-        <h1 class="article-title">Unsubscribe</h1>
         <div class="article-p">
-            <form class="form-unsubscribe" id="UnsubscribeForm"> 
-                <fieldset class="cf form form-unsubscribe"> 
-                    <div class="form-col"> 
-                        <div class="row"> 
-                            <input type="text" id="SubscriberEmail" maxlength="50" value="" name="SubscriberEmail" placeholder="Email" class="required"> 
-                            <a class="r-btn btn btn-yellow" href="https://www.paydaylv.com" id="Unsubscribe">Submit</a> 
-                        </div> 
-                    </div> 
-                </fieldset> 
-            </form>
+            <p>Here at PayDayLV.com we respect your privacy. So, if you decide you don’t want to receive messages or emails from us, we are ready to comply with your request in one click! Simply check the mail in this field. If this is your contact, click UNSUBSCRIBE button, and we will delete your information from our list.s</p>
         </div>
-        </div>
-
         <div class=""></div>
     </div>
 </section>
