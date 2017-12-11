@@ -1558,6 +1558,15 @@ header {
     display: block;
 }
 
+.form-contact, .form-unsubscribe {
+    background: none;
+    margin: 0;
+}
+.form-contact input, .form-contact textarea, .form-unsubscribe input{
+    float: none;
+    margin: 10px
+}
+
 /************** Footer **************/
 
 .footer-wrap {
