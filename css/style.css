@@ -783,7 +783,7 @@ header {
     line-height: 1.1;
     font-family: 'Opan sans', sans-serif;
     font-weight: 700;
-    color: #002c49;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -793,11 +793,11 @@ header {
     height: 30px;
     padding: 10px 0px 0px 22px;
     border-left: 1px solid #dee2df;
-    color: #dee2df;
+    color: #ffffff;
 }
 
 .slogan a {
-    color: #dee2df;
+    color: #ffffff;
 }
 
 .certificate {
@@ -853,12 +853,12 @@ header {
 }
 
 .top-nav-link:hover {
-    color: #a8c7db;
+    color: #151515;
 }
 
 .top-nav-link:active {
-    color: #a8c7db;
-    background: #053a5c;
+    color: #151515;
+    background: #dee2df;
 }
 
 
