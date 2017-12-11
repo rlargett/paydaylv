@@ -735,11 +735,11 @@ textarea {
 }
 
 a {
-    color: #11804f;
+    color: #ea7902;
 }
 
 a:hover {
-    color: #11804f;
+    color: #ea7902;
 }
 
 body {
@@ -922,7 +922,7 @@ header {
 .get-started {
     font-size: 25px;
     font-weight: 500;
-    color: #ea7902;
+    color: #11804f;
 }
 
 .form {
