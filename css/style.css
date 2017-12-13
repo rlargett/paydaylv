@@ -1603,6 +1603,7 @@ footer {
 
 .footer-nav-item {
     display: inline-block;
+    margin-right: 10px;
 }
 
 .footer-nav-link {
