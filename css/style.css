@@ -765,14 +765,15 @@ header {
 }
 
 .logo {
-    padding-top: 23px;
+    padding-top: 18px;
+    padding-left: 18px;
     float: left;
 }
 
 .logo a {
     display: block;
-    width: 214px;
-    height: 35px;
+    width: 183px;
+    height: 55px;
     background: url(../files/images/logo.png) 0 0 no-repeat;
 }
 
